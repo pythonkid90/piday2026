@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Games</title>
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            animation-name: bodyColorChange;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            text-align: center;
+        }
+
+        @keyframes bodyColorChange {
+            0% {
+                background-color: rgb(253, 178, 80);
+            }
+            33% {
+                background-color: rgb(247, 105, 66);
+            }
+            66% {
+                background-color: rgb(253, 80, 198);
+            }
+            100% {
+                background-color: rgb(253, 80, 80);
+            }
+        }
+        
+        @keyframes itemColorChange {
+            0% {
+                background-color: rgb(80, 253, 80);
+            }
+            33% {
+                background-color: rgb(66, 247, 235);
+            }
+            66% {
+                background-color: rgb(86, 80, 253);
+            }
+            100% {
+                background-color: rgb(80, 198, 253);
+            }
+        }
+
+        @keyframes itemHoverChange {
+            0% {
+                background-color: rgb(253, 83, 80);
+            }
+            100% {
+                background-color: rgb(230, 253, 80);
+            }
+        }
+        section {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+        }
+
+        section div {
+            flex: 1 0 30%;
+            border: 10px solid black;
+            border-radius: 20px;
+            animation-name: itemColorChange;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* transition: background-color 2s ease-out; */
+            
+        }
+        section div:hover {
+            /* background-color: rgb(253, 83, 80); */
+            animation-name: itemHoverChange;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nautilus Games</h1>
+    <p>Nautilus Games is a small collaborative project/"company" by two children who made Scratch games during their 
+    5th and 6th grade years. This site hosts a few of those projects for anybody to access.
+    Nautilus Games is now defunct and this site will likely not be updated with new games until at least 2028.</p>
+    <h2>Games</h2>
+    <section>
+        <div>
+            <h3><a href="/fruitclicker">Fruit Clicker (v1.0.3)</a></h3>
+            <p>
+                Nautilus Technology's first published game (although most of the other games were created earlier). A simple 
+                clicker game (made in Scratch, technically Turbowarp). It is well polished and arguably Nautilus's best project.
+            </p>
+            
+            <p><strong>Music:</strong></p>
+
+            <ul>
+                <li>Virtual Riot - Energy Drink</li>
+                <li> Danimal Cannon & Zef - Chronos</li>
+                <li>"DANCe"</li>
+                <li>"Justice League"</li>
+            </ul>
+
+        </div>
+        <div>
+            <h3><a href="/fruitclickerold">Fruit Clicker (v0.9.1)</a></h3>
+            <p>
+                An earlier version of Fruit Clicker. It is less polished and has completely different code (written by a 
+                different Nautilus member), but it does have achievements, unlike v1.0.3. It is written in pure Scratch 
+                without any Turbowarp features.
+            </p>
+        </div>
+        <div>
+            <h3><a href="https://pi-digits.netlify.app">1 BILLION Digits of Pi!!! (v1.0.0)</a></h3>
+            <p>A sloppily put together Scratch program that shows the first billion digits of pi.
+                
+                Commentary:
+                I realized that with the tools that TurboWarp (Scratch but with extra stuff) offers, you could probably make a 
+                program that fetches the digits of pi on demand from an external source (MIT has a collection of 
+                the first billion, and the record was 202.112 trillion at the time of creation), creating a virtually infinite pi program. 
+                So that's exactly what I did! 
+            </p>
+            <p>
+                I downloaded a billion digits from MIT and split it into 500 pieces. I then hosted the digits on Netlify because 
+                MIT seems to have not implemented Cross-Origin Resource Sharing.
+            </p>
+            <p>
+                I then went crazy and coded the entire thing in a night. I might eventually Scratch-ify it and store the digits in variables 
+                if possible, but not today. I don't think TurboWarp links are allowed on Scratch, but if you want my Netlify digits, go to 
+                <a href="https://pi-digits.netlify.app/xaa">pi-digits.netlify.app/xaa</a> for the first 2M, then 
+                <a href="https://pi-digits.netlify.app/xab">xab</a> for the next, then <a href="https://pi-digits.netlify.app/xac">xac</a>, 
+                eventually <a href="https://pi-digits.netlify.app/xba">xba</a>, all the way to <a href="https://pi-digits.netlify.app/xtg">xtg</a>.
+            </p>
+            <p>
+                The program is compiled with TurboWarp Packager into an HTML file. If you want to see the final digits and the ending for yourself, 
+                you can download the HTML file and use the TurboWarp Unpackager to get the original code. I left the code easily hackable if you know
+                what you're doing.
+            </p>
+
+        </div>
+        <div>
+            <h3><a href="/venom">Venom: The Last Stand (v0.9.0)</a></h3>
+            <p>
+                This is a free fan game based on the Venom/Spider Man franchise. You will need to use arrow keys to move, and the keys 1, 2, and 3 to attack. The game was never 
+                completely finished/polished, and if it is broken, please double-click the green flag.
+            </p>
+        </div>
+        <div>
+            <h3><a href="/gooddriver">Are You a Good Driver? (v1.0.1)</a></h3>
+            <p>This is a silly game remixed off of a Griffpatch project on Scratch that tests your driving skills.</p>
+        </div>
+    </section>
+</body>
+</html>

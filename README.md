@@ -1,0 +1,2 @@
+# Nautilus Games Site
+Nautilus Games is a small collaborative project/"company" by two children who made Scratch games during their 5th and 6th grade years. This site hosts a few of those projects for anybody to access. Nautilus Games is now defunct and this site will likely not be updated with new games until at least 2028.
