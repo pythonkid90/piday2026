@@ -1,5 +1,5 @@
 # piday2026
-Calculates an arbitrary number of digits of pi using the Chudnovsky algorithm. Built entirely on March 14th, 2026, AKA 3/14. Made in Rust, using the `rug` crate for large integers and floating point precision.
+Calculates an arbitrary number of digits of pi using the Chudnovsky algorithm. Built entirely on March 14th, 2026, AKA 3/14, with optimizations made the following day. Made in Rust, using the `rug` crate for large integers and floating point precision.
 
 ## Usage
 Works as a shell program. To use (assuming a Unix or Unix-like OS), make sure you first have Git, Rust, and `cargo` installed. Then, simply:
@@ -28,7 +28,7 @@ target/release/piday2026 <digits to calculate>
 ```
 or:
 ```bash
-cargo run -- <digits to calulate>
+cargo run -- <digits to calculate>
 ```
 
 ## Functionality

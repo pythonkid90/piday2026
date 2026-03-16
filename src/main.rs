@@ -1,7 +1,9 @@
 // mod nilakantha;
 mod chudnovsky;
+// mod why;
 use std::io::{self, Write};
 use std::{env, fs};
+use std::time::Instant;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -16,8 +18,14 @@ fn main() {
         println!("Error: Please enter a valid number within the unsigned 32-bit integer limit.");
         return;
     };
+    let now = Instant::now();
     let (final_digits, digit_count) = chudnovsky::calculate(digits);
+    println!("Finished in {}ms.", now.elapsed().as_millis());
     filesave(final_digits, digit_count);
+
+    // let now = Instant::now();
+    // println!("{}", why::pi((((70514 as f64 * 151931373056000.0_f64.log10()) + 1.0) * 10.0_f64.log2()).floor() as u32, 70514));
+    // println!("{}", now.elapsed().as_millis());
 }
 
 fn filesave(final_digits: String, digit_count: usize) {
